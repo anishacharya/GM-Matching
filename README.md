@@ -57,7 +57,7 @@ Given a set of points $\{x_1, x_2, \dots, x_n\} \subset \mathbb{R}^d$, the Geome
 is defined as:
 
 $$
-\\ \mu_{GM} = \underset{z \in \mathbb{R}^d}{\arg\min} \sum_{i=1}^n \| z - x_i \|
+\\ \mu_{GM} = \underset{z \in \mathbb{R}^d}{\arg\min} \sum_{i=1}^n || z - x_i ||
 $$
 
 This estimator is **translation invariant**, **resistant to outliers**, 
