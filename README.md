@@ -56,7 +56,7 @@ Unlike the mean (which minimizes squared distances), the GM minimizes the **sum 
 Given a set of points $\{x_1, x_2, \dots, x_n\} \subset \mathbb{R}^d$, the Geometric Median $\mu_{\text{GM}}$ 
 is defined as:
 
-$\mu_{\text{GM}} = \underset{z \in \mathbb{R}^d}{\arg\min} \sum_{i=1}^n || z - x_i ||$
+$\mu_{GM} = \underset{z \in \mathbb{R}^d}{\arg\min} \sum_{i=1}^n \| z - x_i \|$
 
 This estimator is **translation invariant**, **resistant to outliers**, 
 and lies within the **convex hull** of the clean samples.
