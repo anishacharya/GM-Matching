@@ -1,4 +1,4 @@
-# 🧠 Geometric Median Matching for Robust k-Subset Selection
+# 🧠 Robust k-Subset Selection from Noisy data
 
 ---
 
