@@ -1,10 +1,10 @@
 # 🧠 Robust k-Subset Selection from Noisy data
 
 ---
-### 📄 Read the Full Paper
+The official implementation of the paper [Robust k-Subset Selection from Noisy Data](https://arxiv.org/abs/2504.00564) 
 
-📝 👉 [full paper](https://arxiv.org/abs/2504.00564)
 ---
+
 Modern deep learning thrives on massive datasets — but training on all available data is often prohibitively expensive, both computationally and financially.
 What if we could select just a small, representative subset of the data and still train high-performing models?
 
