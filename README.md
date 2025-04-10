@@ -73,7 +73,7 @@ and lies within the **convex hull** of the clean samples.
 
 We now describe the **GM Matching** algorithm that selects a subset of \( k \) points whose empirical mean best approximates the Geometric Median of the full dataset in an embedding space.
 
-```python
+```
 # GM Matching (Simplified Pseudocode)
 
 Inputs:
@@ -112,3 +112,8 @@ for Φ_b in batches:
         Φ_b.remove(ω)
 
 return DS
+```
+### 📄 Read the Full Paper
+Curious about the theory, proofs, and full experimental results ?
+
+👉 Read our paper: [Geometric Median Matching for Robust k-Subset Selection from Noisy Data](https://arxiv.org/abs/2504.00564)
