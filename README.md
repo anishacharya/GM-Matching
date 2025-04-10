@@ -28,7 +28,7 @@ This leads to a trade-off:
 - **Robustness**: Retain only the easiest, most prototypical examples → safe but not diverse.
 - **Diversity**: Include hard examples → informative but vulnerable to noise.
 
-**How can we break this trade-off?**
+**How can we better navigate this trade-off ?**
 
 ---
 
@@ -63,8 +63,11 @@ $$
 This estimator is **translation invariant**, **resistant to outliers**, 
 and lies within the **convex hull** of the clean samples.
 
+<p align="center">
+  <img src="gm.png" alt="Geometric Median vs Mean">
+</p>
 
-![Geometric Median vs Mean](gm.png)
+[//]: # (![Geometric Median vs Mean]&#40;gm.png&#41;)
 
 ### ⚙️ Algorithm: GM Matching (Greedy Subset Selection)
 
