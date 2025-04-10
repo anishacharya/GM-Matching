@@ -1,38 +1,31 @@
 # 🧠 Robust k-Subset Selection from Noisy data
 
 ---
+👉 Read our paper: [Geometric Median Matching for Robust k-Subset Selection from Noisy Data](https://arxiv.org/abs/2504.00564)
 
-Modern deep learning thrives on massive datasets. But training on all data is expensive — both computationally and financially. What if we could pick just a **small, representative subset** of the data and still train great models?
+Modern deep learning thrives on massive datasets. But training on all data is expensive — both computationally and financially. 
+What if we could pick just a **small, representative subset** of the data and still train great models?
+Welcome to the world of **data pruning**, where the goal is to select a "coreset" — 
+a subset of training examples — that retains the essence of the entire dataset.
 
-Welcome to the world of **data pruning**, where the goal is to select a "coreset" — a subset of training examples — that retains the essence of the entire dataset.
-
-The problem? Real-world datasets are often noisy, and most pruning strategies crumble in the presence of corrupted or adversarial data.
-
-In our new work, we propose a robust solution: **Geometric Median (GM) Matching** — a theoretically grounded and practically scalable method that **selects high-quality subsets even when up to 50% of the data is adversarially corrupted**.
-
+The problem ? Real-world datasets are often noisy, and most pruning strategies crumble in the presence of corrupted or adversarial data.
+In our new work, we propose a robust solution: **Geometric Median (GM) Matching** 
+— a theoretically grounded and practically scalable method that **selects high-quality subsets 
+even when up to 50% of the data is arbitrarily corrupted**.
 ---
 
 ## 🚧 The Challenge: Robustness vs. Diversity
 
 Most existing pruning methods rely on **importance scores** — think of examples closest to the class centroid or 
 hardest to learn. These methods perform well in clean settings.
-
-But under **gross corruption** — mislabeled data, noisy features, or adversarial examples — these strategies fail. 
-
-Why?
-Because they typically compute the **empirical mean** to determine centroids. A single outlier can 
-**completely distort** this mean — leading to bad selections.
-
+But under **gross corruption** — mislabeled data, noisy features, or adversarial examples — these strategies fail.
 This leads to a trade-off:
-
 - **Robustness**: Retain only the easiest, most prototypical examples → safe but not diverse.
 - **Diversity**: Include hard examples → informative but vulnerable to noise.
 
 **How can we better navigate this trade-off ?**
 
 ---
-
-## 💡 Robust Moment Matching with Geometric Median
 
 ### 🎯 Robust Moment Matching
 
@@ -67,9 +60,7 @@ and lies within the **convex hull** of the clean samples.
   <img src="gm.png" alt="Geometric Median vs Mean">
 </p>
 
-[//]: # (![Geometric Median vs Mean]&#40;gm.png&#41;)
-
-### ⚙️ Algorithm: GM Matching (Greedy Subset Selection)
+### ⚙️ Algorithm: GM Matching
 
 We now describe the **GM Matching** algorithm that selects a subset of \( k \) points whose empirical mean best approximates the Geometric Median of the full dataset in an embedding space.
 
@@ -116,4 +107,3 @@ return DS
 ### 📄 Read the Full Paper
 Curious about the theory, proofs, and full experimental results ?
 
-👉 Read our paper: [Geometric Median Matching for Robust k-Subset Selection from Noisy Data](https://arxiv.org/abs/2504.00564)
