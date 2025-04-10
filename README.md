@@ -1,5 +1,5 @@
 # 🧠 Robust k-Subset Selection from Noisy data
-👉 Read our paper: [Geometric Median Matching for Robust k-Subset Selection from Noisy Data](https://arxiv.org/abs/2504.00564)
+
 ---
 
 Modern deep learning thrives on massive datasets. But training on all data is expensive — both computationally and financially. 
