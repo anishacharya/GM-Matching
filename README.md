@@ -1,7 +1,7 @@
 # 🧠 Robust k-Subset Selection from Noisy data
-
----
 👉 Read our paper: [Geometric Median Matching for Robust k-Subset Selection from Noisy Data](https://arxiv.org/abs/2504.00564)
+---
+
 
 Modern deep learning thrives on massive datasets. But training on all data is expensive — both computationally and financially. 
 What if we could pick just a **small, representative subset** of the data and still train great models?
@@ -10,8 +10,7 @@ a subset of training examples — that retains the essence of the entire dataset
 
 The problem ? Real-world datasets are often noisy, and most pruning strategies crumble in the presence of corrupted or adversarial data.
 In our new work, we propose a robust solution: **Geometric Median (GM) Matching** 
-— a theoretically grounded and practically scalable method that **selects high-quality subsets 
-even when up to 50% of the data is arbitrarily corrupted**.
+— a theoretically grounded and practically scalable method that **selects high-quality subsets even when up to 50% of the data is arbitrarily corrupted**.
 ---
 
 ## 🚧 The Challenge: Robustness vs. Diversity
