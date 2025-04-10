@@ -2,7 +2,7 @@
 
 ---
 ### 📄 Read the Full Paper
-Curious about the theory, proofs, and full experimental results ?
+
 📝 👉 [full paper](https://arxiv.org/abs/2504.00564)
 ---
 Modern deep learning thrives on massive datasets — but training on all available data is often prohibitively expensive, both computationally and financially.
