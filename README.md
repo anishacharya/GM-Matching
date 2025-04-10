@@ -32,7 +32,7 @@ This leads to a trade-off:
 
 ---
 
-## 💡 Our Key Insight: Robust Moment Matching with Geometric Median
+## 💡 Robust Moment Matching with Geometric Median
 
 ### 🎯 Robust Moment Matching
 
