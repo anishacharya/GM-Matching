@@ -6,10 +6,14 @@ published at ICML 2025.
 
 ---
 
+<p align="center">
+  <img src="conv.png" alt="Sampling">
+</p>
+
 Modern deep learning thrives on massive datasets — but training on all available data is often prohibitively expensive, both computationally and financially.
 What if we could select just a small, representative subset of the data and still train high-performing models?
 
-Welcome to the world of data pruning, where the goal is to select a k-subset of training examples that captures the core structure and diversity of the entire dataset.
+Welcome to the world of data pruning, where the goal is to select a k-subset of training examples that captures the core structure and diversity of the entire dataset.  
 
 But there's a catch: real-world data is often noisy. Labels may be incorrect, features can be corrupted, and adversarial outliers lurk in the shadows.
 Most existing pruning strategies fail under such conditions — they simply weren't built for robustness.
@@ -109,6 +113,10 @@ for Φ_b in batches:
 
 return DS
 ```
+
+<p align="center">
+  <img src="sampling.png" alt="Sampling">
+</p>
 
 ## 🚀 Installation and Usage
 
