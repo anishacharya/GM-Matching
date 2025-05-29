@@ -127,7 +127,7 @@ pip install torch torchvision pytorch-lightning tqdm numpy
 
 ### Running the Code
 
-The main script `run_classify_coreset.py` can be used to run experiments with different configurations. Here are some example commands:
+The main script `run_classify_coreset.py` provides a boilerplate implementation for running experiments with different configurations. It includes a standard training loop with ResNet18 on CIFAR-10, but you can modify it to use your own models and datasets. Here are some example commands:
 
 1. Run on CIFAR-10 with no noise:
 ```bash
