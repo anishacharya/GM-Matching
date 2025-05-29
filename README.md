@@ -2,6 +2,7 @@
 
 ---
 The official implementation of the paper [Robust k-Subset Selection from Noisy Data](https://arxiv.org/abs/2504.00564) 
+published at ICML 2025.
 
 ---
 
