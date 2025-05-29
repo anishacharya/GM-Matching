@@ -11,7 +11,7 @@ What if we could select just a small, representative subset of the data and stil
 Welcome to the world of data pruning, where the goal is to select a k-subset of training examples that captures the core structure and diversity of the entire dataset.
 
 But there's a catch: real-world data is often noisy. Labels may be incorrect, features can be corrupted, and adversarial outliers lurk in the shadows.
-Most existing pruning strategies fail under such conditions — they simply weren’t built for robustness.
+Most existing pruning strategies fail under such conditions — they simply weren't built for robustness.
 
 In our latest work, we introduce a robust alternative: Geometric Median (GM) Matching — 
 a theoretically principled and practically scalable approach that reliably selects high-quality subsets even when up to 50% of the data is arbitrarily corrupted.
@@ -39,8 +39,8 @@ A principled approach to data pruning is **moment matching** — selecting a sub
 However, under data corruption (e.g., mislabeled or adversarial examples), the **empirical mean is unreliable** 
 — even a single outlier can arbitrarily distort it.
 
-To counter this, we introduce **Robust Moment Matching** — where we match the subset’s mean to a 
-**robust estimator** of the dataset’s central tendency, rather than the standard empirical mean.
+To counter this, we introduce **Robust Moment Matching** — where we match the subset's mean to a 
+**robust estimator** of the dataset's central tendency, rather than the standard empirical mean.
 
 ---
 
@@ -108,4 +108,44 @@ for Φ_b in batches:
 
 return DS
 ```
+
+## 🚀 Installation and Usage
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/GM-Matching.git
+cd GM-Matching
+```
+
+2. Install the required dependencies:
+```bash
+pip install torch torchvision pytorch-lightning tqdm numpy
+```
+
+### Running the Code
+
+The main script `run_classify_coreset.py` can be used to run experiments with different configurations. Here are some example commands:
+
+1. Run on CIFAR-10 with no noise:
+```bash
+python run_classify_coreset.py --dataset cifar10 --coreset_method random --coreset_size_dataset 0.1
+```
+
+2. Run on CIFAR-10 with 20% label noise:
+```bash
+python run_classify_coreset.py --dataset cifar10 --noise_fraction 0.2 --coreset_method gm --coreset_size_dataset 0.1
+```
+
+### Command Line Arguments
+
+- `--dataset`: Dataset to use (currently supports "cifar10")
+- `--noise_fraction`: Fraction of labels to corrupt (between 0 and 1)
+- `--coreset_method`: Method for subset selection ("random" or "gm")
+- `--coreset_size_dataset`: Size of the subset as a fraction of the full dataset
+- `--num_repetitions`: Number of times to repeat the experiment
+- `--log_filename`: Path to save the logs
+
+The results will be saved in the specified log file, which can be used for further analysis.
 
