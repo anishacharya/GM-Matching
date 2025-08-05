@@ -16,7 +16,6 @@ Official implementation of the ICML 2025 paper:
 | [Citation](#-citation)                                              | Cite our ICML 2025 paper                   |
 
 
----
 ## 📋 Overview
 
 <p align="center">
@@ -34,8 +33,6 @@ Most existing pruning strategies fail under such conditions — they simply were
 In our latest work, we introduce a robust alternative: Geometric Median (GM) Matching — 
 a theoretically principled and practically scalable approach that reliably selects high-quality subsets even when up to 50% of the data is arbitrarily corrupted.
 
----
-
 ## 🚧 The Challenge: Robustness vs. Diversity
 
 Most existing pruning methods rely on **importance scores** — think of examples closest to the class centroid or 
@@ -47,7 +44,6 @@ This leads to a trade-off:
 
 **How can we better navigate this trade-off ?**
 
----
 
 ### 🎯 Robust Moment Matching
 
@@ -60,7 +56,6 @@ However, under data corruption (e.g., mislabeled or adversarial examples), the *
 To counter this, we introduce **Robust Moment Matching** — where we match the subset's mean to a 
 **robust estimator** of the dataset's central tendency, rather than the standard empirical mean.
 
----
 
 ### 🛡️ Geometric Median: A Robust Estimator
 
