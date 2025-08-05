@@ -1,8 +1,25 @@
 # 🧠 Robust k-Subset Selection from Noisy data
 
 ---
-The official implementation of the paper [Robust k-Subset Selection from Noisy Data](https://arxiv.org/abs/2504.00564) 
-published at ICML 2025.
+Official implementation of the ICML 2025 paper:  
+**[Geometric Median (GM) Matching for Robust k-Subset Selection from Noisy Data](https://openreview.net/pdf?id=pxfpGbeVx2)**     
+[Anish Acharya](https://scholar.google.com/citations?user=uBmgGMAAAAAJ&hl=en), [Sujay Sanghavi](https://scholar.google.com/citations?user=O-DazBUAAAAJ), [Alex Dimakis](https://scholar.google.com/citations?user=JSFmVQEAAAAJ), and Inderjit S. Dhillon.
+
+---
+
+## 📋 Citation
+
+If you find this work useful in your research, please consider citing:
+
+```bibtex
+@inproceedings{
+  acharya2025geometric,
+  title={Geometric Median ({GM}) Matching for Robust k-Subset Selection from Noisy Data},
+  author={Anish Acharya and Sujay Sanghavi and Alex Dimakis and Inderjit S Dhillon},
+  booktitle={Forty-second International Conference on Machine Learning},
+  year={2025},
+  url={https://openreview.net/forum?id=pxfpGbeVx2}
+}
 
 ---
 
