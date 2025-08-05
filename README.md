@@ -8,12 +8,13 @@ Official implementation of the ICML 2025 paper:
 
 | 🔗 Section                                                          | 📄 Description                             |
 | ------------------------------------------------------------------- | ------------------------------------------ |
-| [Overview](#overview)                                               | Why robust subset selection matters        |
-| [The Challenge](#the-challenge-robustness-vs-diversity)             | Trade-off between diversity and robustness |
-| [Geometric Median Estimator](#️geometric-median-a-robust-estimator) | Why geometric median is the right choice   |
-| [Algorithm](#️algorithm-gm-matching)                                | How GM Matching works                      |
-| [Installation & Usage](#installation-and-usage)                     | Getting started with the code              |
-| [Citation](#citation)                                               | Cite our ICML 2025 paper                   |
+| [Overview](#-overview)                                              | Why robust subset selection matters        |
+| [The Challenge](#-the-challenge-robustness-vs-diversity)            | Trade-off between diversity and robustness |
+| [Geometric Median Estimator](#️-geometric-median-a-robust-estimator) | Why geometric median is the right choice   |
+| [Algorithm](#️-algorithm-gm-matching)                               | How GM Matching works                      |
+| [Installation & Usage](#-installation-and-usage)                    | Getting started with the code              |
+| [Citation](#-citation)                                              | Cite our ICML 2025 paper                   |
+
 
 ---
 ## 📋 Overview
@@ -182,6 +183,4 @@ If you find this work useful in your research, please consider citing:
   url={https://openreview.net/forum?id=pxfpGbeVx2}
 }
 ```
-
-The results will be saved in the specified log file, which can be used for further analysis.
 
