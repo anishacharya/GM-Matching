@@ -3,25 +3,20 @@
 ---
 Official implementation of the ICML 2025 paper:  
 **[Geometric Median (GM) Matching for Robust k-Subset Selection from Noisy Data](https://openreview.net/pdf?id=pxfpGbeVx2)**     
-[Anish Acharya](https://scholar.google.com/citations?user=uBmgGMAAAAAJ&hl=en), [Sujay Sanghavi](https://scholar.google.com/citations?user=O-DazBUAAAAJ), [Alex Dimakis](https://scholar.google.com/citations?user=JSFmVQEAAAAJ), and Inderjit S. Dhillon.
+[Anish Acharya](https://scholar.google.com/citations?user=uBmgGMAAAAAJ&hl=en), [Sujay Sanghavi](https://scholar.google.com/citations?user=O-DazBUAAAAJ), [Alex Dimakis](https://scholar.google.com/citations?user=JSFmVQEAAAAJ), and [Inderjit S. Dhillon](https://scholar.google.com/citations?user=xBv5ZfkAAAAJ).
+
+
+| 🔗 Section                                                          | 📄 Description                             |
+| ------------------------------------------------------------------- | ------------------------------------------ |
+| [Overview](#overview)                                               | Why robust subset selection matters        |
+| [The Challenge](#the-challenge-robustness-vs-diversity)             | Trade-off between diversity and robustness |
+| [Geometric Median Estimator](#️geometric-median-a-robust-estimator) | Why geometric median is the right choice   |
+| [Algorithm](#️algorithm-gm-matching)                                | How GM Matching works                      |
+| [Installation & Usage](#installation-and-usage)                     | Getting started with the code              |
+| [Citation](#citation)                                               | Cite our ICML 2025 paper                   |
 
 ---
-
-## 📋 Citation
-
-If you find this work useful in your research, please consider citing:
-
-```bibtex
-@inproceedings{
-  acharya2025geometric,
-  title={Geometric Median ({GM}) Matching for Robust k-Subset Selection from Noisy Data},
-  author={Anish Acharya and Sujay Sanghavi and Alex Dimakis and Inderjit S Dhillon},
-  booktitle={Forty-second International Conference on Machine Learning},
-  year={2025},
-  url={https://openreview.net/forum?id=pxfpGbeVx2}
-}
-```
----
+## 📋 Overview
 
 <p align="center">
   <img src="conv.png" alt="Sampling">
@@ -172,6 +167,21 @@ python run_classify_coreset.py --dataset cifar10 --noise_fraction 0.2 --coreset_
 - `--coreset_size_dataset`: Size of the subset as a fraction of the full dataset
 - `--num_repetitions`: Number of times to repeat the experiment
 - `--log_filename`: Path to save the logs
+
+## 📋 Citation
+
+If you find this work useful in your research, please consider citing:
+
+```bibtex
+@inproceedings{
+  acharya2025geometric,
+  title={Geometric Median ({GM}) Matching for Robust k-Subset Selection from Noisy Data},
+  author={Anish Acharya and Sujay Sanghavi and Alex Dimakis and Inderjit S Dhillon},
+  booktitle={Forty-second International Conference on Machine Learning},
+  year={2025},
+  url={https://openreview.net/forum?id=pxfpGbeVx2}
+}
+```
 
 The results will be saved in the specified log file, which can be used for further analysis.
 
